@@ -43,7 +43,7 @@
 
 ## Writing / Reading to stream:
 
-`./write_to_stream.sh`
+* `./write_to_stream.sh`
 
 * While this writes to the kinesis stream, run the below python script to consume, and then put records into your firehose delivery stream:
 
