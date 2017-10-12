@@ -16,3 +16,13 @@ module "bucket" {
   bucket_name = "${var.bucket_name}"
 }
 
+module "stream" {
+  source = "./stream"
+  environment = "${var.environment}"
+
+  stream_name = "${var.stream_name}"
+  shard_count = "${var.shard_count}"
+
+  retention_period = "${var.retention_period}"
+
+}
