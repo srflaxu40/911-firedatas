@@ -16,7 +16,6 @@
 4. `pip install boto`
 5. `pip install awscli`
 
----
 
 ## Run:
 
