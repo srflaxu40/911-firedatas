@@ -7,9 +7,8 @@
 ---
 
 ## Setup:
-[AWS Creds](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
-
-* Install Terraform:
+* [AWS Creds](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
+* Install Terraform (latest from brew):
 1. [Install Homebrew](https://brew.sh/)
 2. [Install Terraform](http://brewformulas.org/Terraform)
 3. `brew install python` - this will install pip, or [install pip] (https://pip.pypa.io/en/stable/installing/). 
@@ -39,7 +38,7 @@
 * Cleanup:
   `terraform destroy`
 
----
+
 
 ## Writing / Reading to stream:
 
@@ -49,7 +48,6 @@
 
 * `python 911-etl.py`
 
----
 
 ## Known Issues:
   * Sometimes due to cleanup you have to rename a bucket or wait for the resource bucket to be competely destroyed in Amazon after re-creating.
