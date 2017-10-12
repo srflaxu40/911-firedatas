@@ -34,10 +34,6 @@
 * Create Infrastructure:
   `terraform apply`
 
-* Cleanup:
-  `terraform destroy`
-
-
 
 ## Writing / Reading to stream:
 
@@ -47,6 +43,9 @@
 
 * `python 911-etl.py`
 
+## Clean-up:
+* Destroy Infrastructure:
+  `terraform destroy`
 
 ## Known Issues:
   * Sometimes due to cleanup you have to rename a bucket or wait for the resource bucket to be competely destroyed in Amazon after re-creating.
