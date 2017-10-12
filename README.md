@@ -42,12 +42,13 @@
 
 ---
 
-## Writing to stream:
+## Writing / Reading to stream:
 ```
 ./write_to_stream.sh
 ```
 
-## Reading from stream and writing to firehose, which then writes to s3 bucket specified in your `tk_env` file:
+* While this writes to the kinesis stream, run the below python script to consume, and then put records into your firehose delivery stream:
+
 * `python 911-etl.py`
 
 ---
