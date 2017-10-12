@@ -19,7 +19,7 @@
 
 ## Run:
 
- Source the Terraform Environment File:
+* Source the Terraform Environment File:
   `source tk_env`
 
 * Init a new Terraform working directory:
