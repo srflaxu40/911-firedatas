@@ -45,6 +45,7 @@
 
 ## Clean-up:
 * Destroy Infrastructure:
+
   `terraform destroy`
 
 ## Known Issues:
