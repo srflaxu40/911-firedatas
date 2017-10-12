@@ -13,8 +13,10 @@
 * Install Terraform:
 1. [Install Homebrew](https://brew.sh/)
 2. [Install Terraform](http://brewformulas.org/Terraform)
-3. `brew install python` - this will install pip, or [install pip] (https://pip.pypa.io/en/stable/installing/).
+3. `brew install python` - this will install pip, or [install pip] (https://pip.pypa.io/en/stable/installing/). 
+   * This requires python v2.7.x.
 4. `pip install boto`
+5. `pip install awscli`
 
 ---
 
@@ -37,6 +39,16 @@
 
 * Cleanup:
   `terraform destroy`
+
+---
+
+## Writing to stream:
+```
+./write_to_stream.sh
+```
+
+## Reading from stream and writing to firehose, which then writes to s3 bucket specified in your `tk_env` file:
+* `python 911-etl.py`
 
 ---
 
