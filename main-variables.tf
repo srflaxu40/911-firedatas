@@ -8,10 +8,11 @@ variable "aws_access_key_id" {}
 variable "aws_secret_access_key" {}
 variable "environment" {}
 
-# BUCKET VARIABLES:
-variable "bucket_name" {}
-
 # STREAM VARIABLES:
 variable "stream_name" {}
 variable "shard_count" {}
 variable "retention_period" {}
+
+# FIREHOSE VARIABLES:
+variable "firehose_name" {}
+variable "bucket_name" {}

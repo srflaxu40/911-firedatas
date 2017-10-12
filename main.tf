@@ -9,13 +9,6 @@ provider "aws" {
   secret_key = "${var.aws_secret_access_key}"
 }
 
-module "bucket" {
-  source = "./bucket"
-  region = "${var.region}"
-  environment = "${var.environment}"
-  bucket_name = "${var.bucket_name}"
-}
-
 module "stream" {
   source = "./stream"
   environment = "${var.environment}"
@@ -25,4 +18,12 @@ module "stream" {
 
   retention_period = "${var.retention_period}"
 
+}
+
+
+module "firehose" {
+  source = "./firehose"
+
+  firehose_name = "${var.firehose_name}"
+  bucket_name   = "${var.bucket_name}"
 }
